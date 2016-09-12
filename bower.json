@@ -1,0 +1,20 @@
+{
+  "name": "eatwell",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "Keith <keithbradley1@msn.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/keithbradley1/eatWell",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "^3.0.5"
+  }
+}

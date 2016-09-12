@@ -1,0 +1,33 @@
+<!-- <form name="form" ng-submit="pins.submit()">
+  <a href="#/logout">Logout</a>
+  <div class="container">
+    <div class="row">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input class="col-md-2" id="title" type="text" placeholder="Title" required ng-model="pins.newPin.title">
+        <label for="URL">URL</label>
+        <div class="col-md-1"></div>
+        <input class="col-md-3" id="url" type="url" placeholder="Link" required ng-model="pins.newPin.url">
+        <div class="col-md-1"></div>
+        <a href="#/" class="btn btn-danger col-md-2">Cancel</a>
+        <div class="col-md-1"></div>
+        <button type="submit" class="btn btn-primary col-md-2" ng-hide="pins.editing">Submit</button>
+        <button class="btn btn-success col-md-2" ng-show="pins.editing">Update</button>
+      </div>
+    </div>
+  </div>
+</form>
+<a href="#/boards">Back to Boards</a>
+<div class="container">
+  <div class="row">
+    <div class="md-col-4" ng-repeat="(key, pin) in pins.list">
+      <h3>{{pin.title}}</h3>
+      <p><a href="{{pin.url}}">{{pin.url}}</a></p>
+      <p><img src="{{pin.url}}"></p>
+      <button class="btn btn-danger" ng-click="pins.delete(key)">Delete</button>
+      <button class="btn btn-success" ng-click="pins.edit(key, pin)">Edit</button>
+    </div>
+  </div>
+</div>
+
+  -->

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>eatWell</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+
+
+      <div ng-view></div>
+
+    </div>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="main.js"></script>
+    <script src="config/route-config.js"></script>
+    <script src="config/auth-config.js"></script>
+    <script src="config/landing-config.js"></script>
+    <script src="factory/SearchFactory.js"></script>
+    <script src="factory/PostFactory.js"></script>
+    <script src="factory/FirebaseFactory.js"></script>
+    <script src="factory/AuthFactory.js"></script>
+    <script src="factory/TagFactory.js"></script>
+    <script src="factory/setVenueFactory.js"></script>
+    <script src="controllers/SearchCtrl.js"></script>
+    <script src="controllers/PostCtrl.js"></script>
+    <script src="controllers/AuthCtrl.js"></script>
+    <script src="controllers/LogoutCtrl.js"></script>
+    <script src="controllers/RegisterCtrl.js"></script>
+    <script src="controllers/TagCtrl.js"></script>
+  </body>
+</html>
+
+

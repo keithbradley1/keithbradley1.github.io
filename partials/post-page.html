@@ -1,0 +1,107 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="navbar">
+      <div class="col-sm-9">
+        <nav class="">
+          <h1>eatWell</h1>
+          <h4>post your dinning experience so others know what they can eat</h4>
+        </nav>
+      </div>
+      <div class="col-sm-3">
+        <nav class="">
+        <a ng-click="auth.signOut()" href="/#/auth"><p>logout</p></a>
+          <h4 class="">{{post.currentUser.email}}</h4>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="post">
+        <div>
+          <h4 class="search-title">{{post.heading}}</h4>
+        </div>
+        <div>
+          <h4>{{post.venueName}}</h4>
+        </div>
+        <form name="form" ng-submit="post.submit()">
+          <div class="container">
+            <div class="row">
+              <div class="form-group">
+                <label for="title">Post</label>
+                <textarea ng-model="post.newPost.title" id='title' type="text" class="form-control" rows="3" placeholder="write your post here.." ></textarea>
+                <div class="col-md-1"></div>
+              </div>
+            </div>
+          </div>
+<!--         </form>
+        <form name="form" ng-submit="tags.submit()"> -->
+          <div class="container">
+            <div class="row">
+              <div class="form-group">
+                <h4>select tags for your diet needs </h4>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Vegan
+                  </label>
+                  <label>
+                    <input type="checkbox"> HCLF
+                  </label>
+                  <label>
+                    <input type="checkbox"> Whole 30
+                  </label>
+                  <label>
+                    <input type="checkbox"> Whole Plant
+                  </label>
+                  <label>
+                    <input type="checkbox"> Paleo / Primal
+                  </label>
+                  <label>
+                    <input type="checkbox"> Southbeach
+                  </label>
+                  <label>
+                    <input type="checkbox"> Gluten Free
+                  </label>
+                  <label>
+                    <input type="checkbox"> Frutarian
+                  </label>
+                  <label>
+                    <input type="checkbox"> Raw Vegan
+                  </label>
+                </div>
+                <!-- <label for="title">Title</label> -->
+                <input class="col-md-2" id="title" type="text" placeholder="tag" required ng-model="tags.newTag.title">
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <a href="#/" class="btn btn-danger col-md-2">Cancel</a>
+                <div class="col-md-1"></div>
+                <button type="submit" class="btn btn-primary col-md-2">Submit</button>
+                <div class="col-md-2"></div>
+           <!--      <a href="#/" class="btn btn-danger col-md-2">Cancel</a>
+                <div class="col-md-1"></div>
+                <button type="submit" class="btn btn-primary col-md-2" ng-hide="tags.editing">Submit</button>
+                <button class="btn btn-success col-md-2" ng-show="tags.editing">Update</button>
+              </div> -->
+            </div>
+          </div>
+        </form>
+        <div ng-repeat="(key, post) in post.list" ng-click="post.goToPost(key)">
+          <h3>{{post.title}}</h3>
+          <button class="btn btn-warning col-md-d" ng-click="post.editPost(key); $event.stopPropagation()">Edit</button>
+          <button class="btn btn-danger col-md-d" ng-click="post.deletePost(key); $event.stopPropagation()">Delete</button>
+
+        </div>
+        <div class="md-col-4" ng-repeat="(key, tag) in tags.list">
+          <h3>{{tags.title}}</h3>
+          <button class="btn btn-danger" ng-click="tags.delete(key)">Delete</button>
+          <button class="btn btn-success" ng-click="tags.edit(key, tag)">Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,53 @@
+.navbar {
+  padding: .5em;
+  background-color: lightgreen;
+}
+
+.main {
+  padding: .5em;
+  background-color: lightgreen;
+  background-image: url(city-wallpaper-47.jpg);
+  max-width: 100%;
+  min-height: 500px;
+  color: white;
+}
+
+.post {
+  padding: .5em;
+/*   opacity: .25;
+  background-color: lightgreen;
+  background-image: url(city-wallpaper-47.jpg); */
+  max-width: 100%;
+  min-height: 500px;
+}
+.post::after {
+  padding: .5em;
+  max-width: 100%;
+  min-height: 500px;
+  background-color: lightgreen;
+  content: "";
+  background: url(city-wallpaper-47.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.api-results {
+  font-size: 1.25em;
+  background-color: lightgreen;
+}
+
+.search-title {
+padding: .5em;
+color: white;
+}
+
+.side-bar {
+  padding: .5em;
+  background-color: lightgreen;
+  max-width: 100%
+}
